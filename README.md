@@ -20,6 +20,13 @@
   `docker-compose up`
 * After that under root directory run `./gradlew bootRun`
 
+## Admin
+
+At Startup a user with admin role will be created with following credentials:
+
+* username: aliakbar
+* password: anotherPass
+
 ## Browse API Documentation
 
 After running project successfully go to
