@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "support.jwt.token-expiration",
+      "type": "java.lang.String",
+      "description": "Jwt token expiration in second."
+    },
+    {
+      "name": "support.jwt.signing-key",
+      "type": "java.lang.String",
+      "description": "Jwt signing secret key, this secret shouldn't hardcoded."
+    }
+  ]
+}

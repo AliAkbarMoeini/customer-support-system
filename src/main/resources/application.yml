@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: admin
+    password: strongPassword
+    url: jdbc:postgresql://${SUPPORT_DB_HOST:localhost}:5432/${SUPPORT_DB:support}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+support:
+  jwt:
+    signing-key: 9am8sd09ayfd90aymsfd09yas0dmf
+    token-expiration: 1209600  # two week

@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: strongPassword
+      POSTGRES_DB: support
+    ports:
+      - 5432:5432
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.ir
+      PGADMIN_DEFAULT_PASSWORD: veryStrongPassword
+    ports:
+      - 5050:80
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9090:8080
+    environment:
+      ADMINER_DESIGN: pepa-linha-dark
